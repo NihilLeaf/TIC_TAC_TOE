@@ -19,7 +19,7 @@ body {
 h1 {
   color: #85b396;
   text-align: center;
-  padding-bottom: 70px;
+  padding-bottom: 20px;
   font-size: 2rem;
 }
 
@@ -152,4 +152,13 @@ h1 {
   border-radius: 50%;
   border: 5px solid #85b396;
   opacity: 0.1;
+}
+
+.show-winning-message {
+  display: flex;
+}
+
+.score {
+  color: #85b396;
+  padding-bottom: 40px;
 }/*# sourceMappingURL=style.css.map */

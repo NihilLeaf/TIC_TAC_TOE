@@ -19,7 +19,7 @@ body {
 h1 {
     color: $acent;
     text-align: center;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
     font-size: 2rem;
 }
 
@@ -166,4 +166,13 @@ h1 {
         border: 5px solid $acent;
         opacity: 0.1;
     }
+}
+
+.show-winning-message {
+    display: flex;
+}
+
+.score {
+    color: $acent;
+    padding-bottom: 40px;
 }

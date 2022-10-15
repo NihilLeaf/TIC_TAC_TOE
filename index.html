@@ -10,6 +10,8 @@
 </head>
 <body>
     <h1>Tic-Tac-Toe</h1>
+    <span class="score" scorex>X Score: </span>
+    <span class="score" scorey>O Score: </span>
     <div class="board bx" data-board>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -23,8 +25,8 @@
     </div>
 
     <div class="winning-message" data-winning-message>
-        <p>Você ganhou</p>
-        <button>Restart</button>
+        <p data-winning-message-text>Você ganhou</p>
+        <button button>Restart</button>
     </div>
 
     <script src="script.js"></script>
