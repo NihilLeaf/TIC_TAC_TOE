@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/Jogo_da_velha_-_tic_tac_toe.png" type="image/x-icon">
     <link rel="stylesheet" href="/scss/style.css">
     <title>Tic Tac Toe</title>
 </head>
 <body>
     <h1>Tic-Tac-Toe</h1>
-    <div class="board x">
-        <div class="cell x" data-cell></div>
-        <div class="cell o" data-cell></div>
+    <div class="board bx" data-board>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -22,7 +23,7 @@
     </div>
 
     <div class="winning-message" data-winning-message>
-        <p></p>
+        <p>Você ganhou</p>
         <button>Restart</button>
     </div>
 

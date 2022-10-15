@@ -24,34 +24,7 @@ h1 {
 }
 
 .winning-message {
-  background: rgba(0, 20, 0, 0.9);
   display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 100vw;
-  min-height: 100vh;
-}
-.winning-message p {
-  color: #dfe0ba;
-  font-size: 3rem;
-}
-.winning-message button {
-  font-size: 1.5rem;
-  font-weight: bold;
-  background-color: rgba(0, 20, 0, 0.1);
-  color: #dfe0ba;
-  padding: 10px 20px;
-  outline: none;
-  border-radius: 30px;
-  border: 1px solid #85b396;
-  cursor: pointer;
-  transition: all 100ms ease;
-}
-.winning-message button:hover {
-  letter-spacing: 1px;
-  background-color: rgba(0, 80, 0, 0.5);
 }
 
 .board {
@@ -63,7 +36,22 @@ h1 {
   justify-content: center;
   align-content: center;
   justify-items: center;
-  transition: all 200ms ease;
+}
+.board.x::after {
+  content: "";
+  position: relative;
+  width: 5px;
+  height: 60px;
+  background-color: #85b396;
+  rotate: 45deg;
+}
+.board.x::before {
+  content: "";
+  position: relative;
+  width: 5px;
+  height: 60px;
+  background-color: #85b396;
+  rotate: -45deg;
 }
 .board .cell {
   width: 100px;
@@ -124,32 +112,3 @@ h1 {
   border-radius: 50%;
   border: 5px solid #85b396;
 }
-
-.bx .cell:not(.x):not(.o):hover::after {
-  content: "";
-  position: relative;
-  width: 5px;
-  height: 60px;
-  background-color: #85b396;
-  rotate: 45deg;
-  opacity: 0.1;
-}
-.bx .cell:not(.x):not(.o):hover::before {
-  content: "";
-  position: relative;
-  width: 5px;
-  height: 60px;
-  background-color: #85b396;
-  rotate: -45deg;
-  opacity: 0.1;
-}
-
-.bo .cell:not(.x):not(.o):hover::after {
-  content: "";
-  position: relative;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  border: 5px solid #85b396;
-  opacity: 0.1;
-}/*# sourceMappingURL=style.css.map */
